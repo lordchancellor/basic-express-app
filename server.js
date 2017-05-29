@@ -48,11 +48,22 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Projects',
+		welcomeMessage: 'Welcome to the projects page. There would be projects here, if it were a real website.'
+	})
+});
+
 app.get('/bad', (req, res) => {
 	res.send({
 		errorMessage: 'Something went wrong.'
 	})
-})
+});
 
 app.disable('etag');
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Add projects page
+// Add a link to the nav for the projects page
+// 

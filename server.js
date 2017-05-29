@@ -63,7 +63,3 @@ app.get('/bad', (req, res) => {
 
 app.disable('etag');
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-// Add projects page
-// Add a link to the nav for the projects page
-// 
